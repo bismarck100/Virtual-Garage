@@ -4,7 +4,7 @@ class VirtualGarage: ExileAbstractAction
 {
   title = "Access Virtual Garage";
   condition = "((ExileClientInteractionObject animationPhase 'LaptopLidRotation') >= 0.5)";
-  action = "call ExileClient_VirtualGarge_AccessGarage";
+  action = "call ExileClient_VirtualGarage_AccessGarage";
 };
 
 
