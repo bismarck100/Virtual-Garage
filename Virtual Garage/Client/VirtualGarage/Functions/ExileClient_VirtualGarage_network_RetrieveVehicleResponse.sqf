@@ -19,7 +19,15 @@ if(_response == "true")then
   _show3DMarker = getNumber (missionconfigfile >> "VirtualGarageSettings" >> "VirtualGarage_3DMarkerOnVehicleOnSpawn");
   if(_show3DMarker == 1)then
   {
-    VirtualGarageDraw3DIcon = addMissionEventHandler ["Draw3D", { call ExileClient_VirtualGarage_VehicleDraw3DIcon; }];
+    sleepTime = getNumber (missionconfigfile >> "VirtualGarageSettings" >> "VirtualGarage_3DTime");
+    CurTime = diag_tickTime;
+    VirtualGarageDraw3DIcon = addMissionEventHandler ["Draw3D", {
+        if (diag_tickTime - CurTime > sleepTime) then {
+            removeMissionEventHandler ["Draw3D", VirtualGarageDraw3DIcon];
+            VirtualGarage3DIconVisible = false;
+        };
+        call ExileClient_VirtualGarage_VehicleDraw3DIcon;
+    }];
     VirtualGarage3DIconVisible = true;
   };
 }
