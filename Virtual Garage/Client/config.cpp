@@ -86,7 +86,7 @@ class VirtualGarageSettings
 	VirtualGarage_ReapplyDamage = 1;
 
 	/**
-	 * Give the player the pin code when the retrive the vehicle
+	 * Give the player the pin code when the retrive they vehicle
 	 */
 	VirtualGarage_GivePlayerPicCode = 1;
 
