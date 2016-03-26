@@ -104,5 +104,3 @@ class VirtualGarageSettings
  	VirtualGarage_FlagLevel9Limit = 18;
  	VirtualGarage_FlagLevel10Limit = 20;
 };
-=======
->>>>>>> origin/master
