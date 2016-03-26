@@ -29,7 +29,7 @@ try
   };
   if !((owner _vehicle) isEqualTo (owner _player)) then
   {
-    throw "The player does now onw the vehicle";
+    throw "The player does not own the vehicle";
   };
   if(_vehicle getVariable "ExileIsPersistent" isEqualTo false) then
   {
