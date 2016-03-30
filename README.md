@@ -3,8 +3,12 @@
 Virtual garage is just what it says its a virtual garage system for Exile
 
 ---
-
-### Installation
+### Change Log
+* [Fixed] Zero Divisor error when there are no vehicles stored in the garage
+* [Added] Vehicle Skin Saving ... oops sorry I forgot custom skins were even a thing
+* [Added] Added the ability to spawn cars in the same position where they were stored. Enabled via config.
+---
+### Fresh Installation
 ---
 ### Server Side
 1. Open your mySQL database editor
@@ -39,6 +43,30 @@ Virtual garage is just what it says its a virtual garage system for Exile
 14. That's it your done
 
 ---
+### Updating
+---
+### Server Side
+1. Open your mySQL database editor
+2. Copy and paste the contents of **SQLUpdate.sql** in to the query
+3. Run the query
+4. Refresh your database, your virtual_garage table should now have 10 new columns
+5. you are now done with database changes so you can close your mySQL editor
+6. Navigate to **@ExileServer/extDB/sql_custom_v2**
+7. Open up the **exile.ini**
+8. Delete your Virtual garage section and Copy and paste the contents of **VirtualGarage_extDB2.ini** in its place
+9. Save **exile.ini**
+10. Copy the **VirtualGarage_Server.pbo** into **@ExileServer/addons**
+
+### Client Side
+1. De-PBO your mission File
+2. Delete your **VirtualGarage** folder and copy the new **VirtualGarage** folder in to its place
+3. open up your config.cpp
+4. Find **class VirtualGarageSettings**
+5. Delete **class VirtualGarageSettings** and replace it with the new one that is in the config.cpp file in the download
+6. Reapply your settings
+7. Re-PBO your mission file
+8. That's it your done
+
 ### Additional Info
 you can configure the virtual garage setting via VirtualGarageSettings that you placed at the bottom of your config.cpp in your mission file
 
