@@ -4,9 +4,9 @@ Virtual garage is just what it says its a virtual garage system for Exile
 
 ---
 ### Change Log
-[Fixed] Zero Divisor error when there are no vehicles stored in the garage
-[Added] Vehicle Skin Saving ... oops sorry I forgot custom skins were even a thing
-[Added] Added the ability to spawn cars in the same position where they were stored. Enabled via config.
+# [Fixed] Zero Divisor error when there are no vehicles stored in the garage
+# [Added] Vehicle Skin Saving ... oops sorry I forgot custom skins were even a thing
+# [Added] Added the ability to spawn cars in the same position where they were stored. Enabled via config.
 ---
 ### Fresh Installation
 ---
