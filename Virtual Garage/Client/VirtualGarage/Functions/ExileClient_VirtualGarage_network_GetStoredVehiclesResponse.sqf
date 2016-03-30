@@ -21,7 +21,3 @@ if (_VehiclesCount !=0) then {
     };
     lbSetCurSel [1500, 0];
 };
-<<<<<<< HEAD
-=======
-
->>>>>>> origin/master
