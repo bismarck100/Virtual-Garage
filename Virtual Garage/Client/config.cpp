@@ -68,12 +68,12 @@ class VirtualGarageSettings
 	 */
 	VirtualGarage_VehicleSpawnState = 1;
 
-    /**
-     * How do you want the vehicle to spawn
-     * 1 = The Exact position and direction as where it was when it was stored
-     * 2 = Let the server choose a random safe position near the player
-     */
-    VirtualGarage_VehicleSpawnPos = 1;
+        /**
+        * How do you want the vehicle to spawn
+        * 1 = The Exact position and direction as where it was when it was stored
+        * 2 = Let the server choose a random safe position near the player
+        */
+        VirtualGarage_VehicleSpawnPos = 2;
 
 	/**
 	 * Should a 3d marker be added to the vehicle when it spawns to help players find the vehicle 1 = true 0 = false
